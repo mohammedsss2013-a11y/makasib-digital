@@ -1,7 +1,7 @@
 import React from 'react';
 import { Cairo, JetBrains_Mono } from 'next/font/google';
-import { NavbarWrapper } from '@/components/layout/NavbarWrapper';
-import { Footer } from '@/components/layout/Footer';
+import { NavbarWrapper } from '../components/layout/NavbarWrapper';
+import { Footer } from '../components/layout/Footer';
 import './globals.css';
 
 const cairo = Cairo({
