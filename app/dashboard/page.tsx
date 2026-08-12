@@ -21,8 +21,8 @@ export default function UserDashboardPage() {
   return (
     <div className="space-y-8 dir-rtl">
       <div className="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
-        <h1 className="text-2xl font-black text-white">???? ?????? ???????</h1>
-        <p className="text-xs text-slate-400 mt-1">?????? ???? ???????? ????????? ???? ??? ?????? ????? ????? ??????.</p>
+        <h1 className="text-2xl font-black text-white">لوحة أدواتي الحافظة</h1>
+        <p className="text-xs text-slate-400 mt-1">استعرض كافة الحسابات والبيانات التي قمت بحفظها أثناء تصفحك المنصة.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -54,7 +54,7 @@ export default function UserDashboardPage() {
                 href="/finance/freelancing/pricing-guide"
                 className="text-xs text-slate-300 hover:text-white flex items-center gap-1 justify-end transition-colors"
               >
-                <span>???????? ??? ????? ??????</span>
+                <span>الانتقال إلى حاسبة الأداة</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
             </div>
@@ -62,9 +62,9 @@ export default function UserDashboardPage() {
         ) : (
           <div className="col-span-full text-center py-12 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-3">
             <Bookmark className="w-8 h-8 text-slate-600 mx-auto" />
-            <p className="text-sm text-slate-400">?? ??? ???? ?? ????? ?? ?????? ?? ????? ???.</p>
+            <p className="text-sm text-slate-400">لم تقم بحفظ أي أدوات أو حسابات في لوحتك بعد.</p>
             <Link href="/" className="inline-block bg-emerald-500 text-slate-950 font-bold text-xs px-4 py-2 rounded-lg">
-              ?????? ??????? ?????
+              استكشف الأدوات الحية
             </Link>
           </div>
         )}
